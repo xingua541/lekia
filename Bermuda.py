@@ -115,7 +115,7 @@ bot.remove_command('methods')
 bot.remove_command('plans')
 
 @bot.command()
-async def add(self,plan,id):
+async def add(self,plan,id)
 	print(str(wledReseller))
 	if str(self.author.id) in wledReseller:
 		if plan.lower() == 'plana':
