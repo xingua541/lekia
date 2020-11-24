@@ -114,7 +114,7 @@ bot.remove_command('help')
 bot.remove_command('methods')
 bot.remove_command('plans')
 
-@bot.command()
+@bot.command(addbb)
 async def add(self,plan,id)
 	print(str(wledReseller))
 	if str(self.author.id) in wledReseller:
@@ -213,7 +213,7 @@ async def add(self,plan,id)
 		embed = discord.Embed(title='You do not have gentoken perms! (Reseller)')
 		await self.send(embed=embed)
 
-@bot.command()
+@bot.command(banbb)
 @has_permissions(ban_members=True)
 async def addreseller(self,id):
     PlanReseller.insert_one({'id': id})
@@ -226,7 +226,7 @@ async def addreseller(self,id):
     succesful = discord.Embed(title='Successfully added user with the id: '+id+' to the db.',color=discord.Colour(3066993))
     await self.send(embed=succesful)
 
-@bot.command()
+@bot.command(banbc)
 @has_permissions(ban_members=True)
 async def remove(self,plan,id):
     if plan.lower() == 'plana':
@@ -327,7 +327,7 @@ async def remove(self,plan,id):
         succesful = discord.Embed(title='Successfully removed user with the id: '+id+' from the db.',color=discord.Colour(3066993))
         await self.send(embed=succesful)
 
-@bot.command()
+@bot.command(help)
 async def help(self):
     	help = discord.Embed(title=f"▸ Help Menu", color=0x9700f5, description="Prefix '")
     	help.add_field(name="▸ Attacktut", value="Shows you how to send an attack", inline=False)
